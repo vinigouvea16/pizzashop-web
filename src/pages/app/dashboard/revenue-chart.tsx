@@ -13,7 +13,6 @@ import {
   YAxis,
   CartesianGrid,
   Line,
-  Tooltip,
 } from 'recharts'
 
 const data = [
@@ -22,8 +21,8 @@ const data = [
   { date: '12/12', revenue: 900 },
   { date: '13/12', revenue: 400 },
   { date: '14/12', revenue: 2300 },
-  { date: '15/12', revenue: 300 },
-  { date: '16/12', revenue: 540 },
+  { date: '15/12', revenue: 600 },
+  { date: '16/12', revenue: 740 },
 ]
 
 export function RevenueChart() {
@@ -54,6 +53,7 @@ export function RevenueChart() {
                 })
               }
             />
+            <CartesianGrid vertical={false} className="stroke-muted" />
 
             <Line
               type="linear"

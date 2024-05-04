@@ -1,13 +1,13 @@
 import { api } from '@/lib/axios'
 
-interface GetProfileResponse {
+export interface GetProfileResponse {
   phone: string | null
   email: string
   name: string
   id: string
   role: 'manager' | 'customer'
-  createdAt: Date
-  updatedAt: Date
+  createdAt: Date | null
+  updatedAt: Date | null
 }
 
 export async function getProfile(): Promise<GetProfileResponse> {

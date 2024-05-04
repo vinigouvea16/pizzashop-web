@@ -11,6 +11,7 @@ import { getPopularProductsMock } from './get-popular-products-mock'
 import { getProfileMock } from './get-profile-mock'
 import { updateProfileMock } from './update-profile-mock'
 import { getManagedRestaurantMock } from './get-managed-restaurant-mock'
+import { getOrdersMock } from './get-orders-mock'
 
 export const worker = setupWorker(
   signInMock,
@@ -24,6 +25,7 @@ export const worker = setupWorker(
   getProfileMock,
   updateProfileMock,
   getManagedRestaurantMock,
+  getOrdersMock,
 )
 
 export async function enableMSW() {
